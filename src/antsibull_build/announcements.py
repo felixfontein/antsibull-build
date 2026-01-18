@@ -325,14 +325,12 @@ def matrix_announcement(
         print("Continuing...")
         return
     body = body.replace("<FORUM LINK>", forum_url)
-    message = dedent(
-        """
+    message = dedent("""
     Please open your Matrix client and send the message to:
     - #community:ansible.com
     - #packaging:ansible.com
     - #social:ansible.com (mention @newsbot)
-    """
-    )
+    """)
     if ctx.clipboard:
         pyperclip.copy(body)
         message += "\nThe message has been copied to your clipboard"

@@ -7,7 +7,6 @@
 Misc. utility functions for the `from_source` package
 """
 
-
 from __future__ import annotations
 
 from collections.abc import Sequence
